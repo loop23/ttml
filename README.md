@@ -2,7 +2,12 @@
 
 Very simple Timed Text Markup Language parsing - I needed to parse a ttml file
 and couldn't find a ruby implementation (probably because you don't really
-need one!), so I wrote one.
+need one!), so I wrote one. In the future I may support writing a ttml file
+and/or a better, richer API.
+
+## WARNING
+
+It doesn't yet work actually, don't even think of using it ;)
 
 ## Installation
 
@@ -24,7 +29,6 @@ tt = Ttml.parse({path_to_file}}
 tt.subtitle_stream(:from => 0.0, :to => 100.0) do |event|
   puts event.inspect
 end
-
 
 ## Contributing
 
