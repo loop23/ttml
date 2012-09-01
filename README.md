@@ -25,10 +25,10 @@ Or install it yourself as:
 
 ## Usage
 
-tt = Ttml.parse({path_to_file}}
-tt.subtitle_stream(:from => 0.0, :to => 100.0) do |event|
-  puts event.inspect
-end
+    tt = Ttml.parse({path_to_file}}
+    tt.subtitle_stream(:from => 0.0, :to => 100.0) do |event|
+      puts event.inspect
+    end
 
 ## Contributing
 
