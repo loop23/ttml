@@ -2,6 +2,17 @@ require "ttml/version"
 require "nokogiri"
 
 module Ttml
+  # Minimal Timed Text Markup Language parsing and extraction.
+  #
+  # Example:
+  #   >> doc = Ttml::Document.new('test/sample.xml')
+  #   => [Ttml::Document]
+  #   >> doc.copyright
+  #   => '(c) 2012 loop23'
+  #   >> doc.subtitles
+  #   => [All subtitles]
+  #   >> doc.subtitles(0.0, 100.0)
+  #   => [Subtitles from beginning to 100 seconds]
   class Document
 
     attr_reader :doc
@@ -11,7 +22,7 @@ module Ttml
       @doc = Nokogiri::XML(stream)
     end
 
-    # Returns subtitles from "from" to "to" as an array
+    # Returns subtitles from "from" to "to" (inclusive) as an array
     # (or all subtitles if both are missing).
     # I tried using xpath functions, without success,
     # as in xmlns:div/xmlns:p[number(@begin)=>746.63] - any ideas?
