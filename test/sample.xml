@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tt xmlns:ns3="http://www.w3.org/2006/10/ttaf1#style"
+ xmlns:ns2="http://www.w3.org/2006/10/ttaf1#metadata" xmlns="http://www.w3.org/2006/10/ttaf1" xml:lang="">
+ <head>
+  <ns2:title>Timed Text DFPX</ns2:title>
+  <ns2:copyright>2012 (c) loop</ns2:copyright>
+  <styling>
+   <style ns3:textAlign="center" ns3:fontSize="22px" ns3:fontFamily="proportionalSansSerif" ns3:color="yellow"
+    xml:id="s1" />
+   <style ns3:color="yellow" style="s1" xml:id="s2" />
+   <style ns3:textAlign="end" style="s1" xml:id="s1Right" />
+   <style ns3:textAlign="start" style="s2" xml:id="s2Left" />
+  </styling>
+  <layout>
+   <region xml:id="subtitleArea" ns3:padding="5px 3px" ns3:extent="560px 62px" ns3:displayAlign="after"
+    ns3:backgroundColor="black" style="s1" />
+  </layout>
+ </head>
+ <body region="subtitleArea">
+  <div>
+   <p end="362.05s" begin="358.72s"><![CDATA[<p align="left" ><font color="#ffa500">Signori Consiglieri siete pregati di prendere posto</font></p>]]></p>
+   <p end="405.94s" begin="405.81s"><![CDATA[<p align="left" ><font color="#ffa500">e</font></p>]]></p>
+   <p end="463.13s" begin="462.12s"><![CDATA[<p align="left" ><font color="#ffa500">di attivare</font></p>]]></p>
+   <p end="472s" begin="470.44s"><![CDATA[<p align="left" ><font color="#ffa500">la carta.</font></p>]]></p>
+   <p end="474.63s" begin="472s"><![CDATA[<p align="left" ><font color="#ffa500">Il Segretario</font></p>]]></p>
+   <p end="475.92s" begin="474.63s"><![CDATA[<p align="left" ><font color="#ffa500">Generale dia corso all'appello.</font></p>]]></p>
+   <p end="621.21s" begin="618.41s"><![CDATA[<p align="left" ><font color="#ffa500">Avuta la totalita' dei signori Consiglieri,</font></p>]]></p>
+   <p end="624.53s" begin="621.21s"><![CDATA[<p align="left" ><font color="#ffa500">dichiaro aperti i lavori del Consiglio Provinciale,</font></p>]]></p>
+   <p end="627.3s" begin="624.53s"><![CDATA[<p align="left" ><font color="#ffa500">ricordando a tutti i signori Consiglieri, al signor</font></p>]]></p>
+   <p end="630.25s" begin="627.3s"><![CDATA[<p align="left" ><font color="#ffa500">Presidente della Provincia e ai signori Assessori,</font></p>]]></p>
+   <p end="631.98s" begin="630.25s"><![CDATA[<p align="left" ><font color="#ffa500">che i</font></p>]]></p>
+   <p end="633.73s" begin="631.98s"><![CDATA[<p align="left" ><font color="#ffa500"></font></p>]]></p>
+   <p end="635.83s" begin="633.73s"><![CDATA[<p align="left" ><font color="#ffa500">lavori del Consiglio Provinciale sono in</font></p>]]></p>
+   <p end="639.53s" begin="635.83s"><![CDATA[<p align="left" ><font color="#ffa500">trasmissione diretta.</font></p>]]></p>
+   <p end="643.37s" begin="639.53s"><![CDATA[<p align="left" ><font color="#ffa500">Passiamo alla trattazione dell'ordine del giorno, la prima proposta</font></p>]]></p>
+   <p end="647.09s" begin="643.37s"><![CDATA[<p align="left" ><font color="#ffa500">e': 'Approvazione del verbale della seduta del Consiglio Provinciale</font></p>]]></p>
+   <p end="650.46s" begin="647.09s"><![CDATA[<p align="left" ><font color="#ffa500">del 3 dicembre 2009, del 16</font></p>]]></p>
+   <p end="654.02s" begin="650.46s"><![CDATA[<p align="left" ><font color="#ffa500">dicembre 2009 e del 21 dicembre 2009'.</font></p>]]></p>
+   <p end="656.21s" begin="654.02s"><![CDATA[<p align="left" ><font color="#ffa500"></font></p>]]></p>
+   <p end="658.41s" begin="656.21s"><![CDATA[<p align="left" ><font color="#ffa500">Chi avesse delle osservazioni da muovere</font></p>]]></p>
+   <p end="662.19s" begin="658.41s"><![CDATA[<p align="left" ><font color="#ffa500">in ordine al contenuto dei verbali, e' autorizzato.</font></p>]]></p>
+   <p end="664.58s" begin="662.19s"><![CDATA[<p align="left" ><font color="#ffa500"></font></p>]]></p>
+   <p end="669.4s" begin="664.58s"><![CDATA[<p align="left" ><font color="#ffa500">Nessuna questione' Pongo in votazione l'approvazione del verbale</font></p>]]></p>
+   <p end="672.38s" begin="669.4s"><![CDATA[<p align="left" ><font color="#ffa500">del Consiglio Provinciale del 3 dicembre 2009. Prego.</font></p>]]></p>
+   <p end="709.28s" begin="703.82s"><![CDATA[<p align="left" ><font color="#ffa500">37 votanti, 37 favorevoli. Il Consiglio approva.</font></p>]]></p>
+   <p end="713.9s" begin="709.28s"><![CDATA[<p align="left" ><font color="#ffa500">Pongo in votazione il verbale del Consiglio Provinciale</font></p>]]></p>
+   <p end="717.37s" begin="713.9s"><![CDATA[<p align="left" ><font color="#ffa500">del 16 dicembre 2009.</font></p>]]></p>
+   <p end="719.52s" begin="717.37s"><![CDATA[<p align="left" ><font color="#ffa500">I Signori Consiglieri sono pregati di votare.</font></p>]]></p>
+   <p end="744.2s" begin="738.91s"><![CDATA[<p align="left" ><font color="#ffa500">36 votanti, 36 favorevoli. Il Consiglio approva.</font></p>]]></p>
+   <p end="746.63s" begin="744.2s"><![CDATA[<p align="left" ><font color="#ffa500">Pongo in votazione il</font></p>]]></p>
+   <p end="749.38s" begin="746.63s"><![CDATA[<p align="left" ><font color="#ffa500">verbale della seduta del 21 dicembre 2009.</font></p>]]></p>
+  </div>
+ </body>
+</tt>
