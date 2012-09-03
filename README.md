@@ -5,10 +5,6 @@ and couldn't find a ruby implementation (probably because you don't really
 need one!), so I wrote one. In the future I may support writing a ttml file
 and/or a better, richer API.
 
-## WARNING
-
-It doesn't yet work actually, don't even think of using it ;)
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -25,10 +21,11 @@ Or install it yourself as:
 
 ## Usage
 
-    tt = Ttml.parse({path_to_file}}
-    tt.subtitle_stream(:from => 0.0, :to => 100.0) do |event|
+    tt = Ttml.Document.new('test/sample.xml)
+    # Returns events until 100.0 seconds
+    tt.subtitle_stream(:from => 0.0, :to => 100.0).each { |event|
       puts event.inspect
-    end
+    }
 
 ## Contributing
 
