@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["loop23@gmail.com"]
   gem.description   = %q{Parse a ttml file}
   gem.summary       = %q{Minimal parsing for timed text markup language (http://www.w3.org/TR/ttaf1-dfxp/)}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/loop23/ttml"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
