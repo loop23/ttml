@@ -15,11 +15,12 @@ module Ttml
   #   => [Subtitles from beginning to 100 seconds]
   class Document
 
-    attr_reader :doc
+    attr_reader :doc, :ns
 
     def initialize file_or_stream
       stream = file_or_stream.is_a?(IO) ? file_or_stream : File.open(file_or_stream)
       @doc = Nokogiri::XML(stream)
+      puts @ns = @doc.collect_namespaces
     end
 
     # Returns subtitles from "from" to "to" (inclusive) as an array

@@ -1,0 +1,17 @@
+<?xml version='1.0'?><ns2:tt xmlns:ns4="http://www.w3.org/2006/10/ttaf1#parameter" xmlns:ns3="http://www.w3.org/2006/10/ttaf1#style" xmlns:ns2="http://www.w3.org/2006/10/ttaf1" xmlns:ns1="http://www.w3.org/2006/10/ttaf1#metadata" xml:lang="it"><ns2:head><ns1:title>Timed Text DFPX</ns1:title>
+<ns1:copyright>2010 (c) PerVoice S.p.A.</ns1:copyright>
+<ns2:styling><ns2:style xml:id="s1" ns3:textAlign="left" ns3:fontSize="22px" ns3:fontFamily="proportionalSansSerif" ns3:color="yellow"/>
+<ns2:style xml:id="s2" ns3:color="yellow" style="s1"/>
+<ns2:style xml:id="s1Right" ns3:textAlign="end" style="s1"/>
+<ns2:style xml:id="s2Left" ns3:textAlign="start" style="s2"/>
+</ns2:styling>
+<ns2:layout><ns2:region ns3:padding="5px 3px" ns3:extent="560px 62px" ns3:displayAlign="after" ns3:backgroundColor="black" style="s1" xml:id="subtitleArea"/>
+</ns2:layout>
+</ns2:head>
+<ns2:body region="subtitleArea"><ns2:div><ns2:p end="104.34s" begin="104.34s"><![CDATA[<p align="left" ><font color="#ffa500">﻿Sono</font></p>]]></ns2:p>
+<ns2:p end="107.76s" begin="104.34s"><![CDATA[<p align="left" ><font color="#ffa500"></font></p>]]></ns2:p>
+<ns2:p end="117.8s" begin="107.76s"><![CDATA[<p align="left" ><font color="#ffa500">presenti 25</font></p>]]></ns2:p>
+<ns2:p end="117.8s" begin="117.8s"><![CDATA[<p align="left" ><font color="#ffa500">Consiglieri,</font></p>]]></ns2:p>
+</ns2:div>
+</ns2:body>
+</ns2:tt>
