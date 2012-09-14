@@ -22,7 +22,7 @@ module Ttml
       @doc = Nokogiri::XML(stream)
       @namespaces = @doc.collect_namespaces
       # puts "Ho namespaces? #{ @namespaces.inspect }"
-      @subs_ns = @namespaces.invert["http://www.w3.org/2006/10/ttaf1"]
+      @subs_ns = @namespaces.invert["http://www.w3.org/2006/10/ttaf1"].sub(/^xmlns:/,'')
       @meta_ns = @namespaces.invert["http://www.w3.org/2006/10/ttaf1#metadata"].sub(/^xmlns:/,'')
     end
 
@@ -30,7 +30,8 @@ module Ttml
     # (or all subtitles if both are missing).
     # I tried using xpath functions, without success,
     # as in xmlns:div/xmlns:p[number(@begin)=>746.63] - any ideas?
-    def subtitle_stream from = 0.0, to = 99999999.0
+    def subtitle_stream from = 0.0, to = nil
+      to = 99999999999.99 unless to
       doc.xpath("/#{ @subs_ns }:tt/#{ @subs_ns }:body/#{ @subs_ns }:div/#{ @subs_ns }:p").select {|n|
         # puts "Vedo se #{ n['begin'].to_f } >= #{ from } e se #{ n['end'].to_f } <= #{ to }"
         (n['begin'].to_f >= from) && (n['end'].to_f <= to)
