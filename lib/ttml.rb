@@ -32,7 +32,8 @@ module Ttml
     # as in xmlns:div/xmlns:p[number(@begin)=>746.63] - any ideas?
     def subtitle_stream from = 0.0, to = nil
       to = 99999999999.99 unless to
-      doc.xpath("/#{ @subs_ns }:tt/#{ @subs_ns }:body/#{ @subs_ns }:div/#{ @subs_ns }:p").select {|n|
+      @all_subs ||= doc.xpath("/#{ @subs_ns }:tt/#{ @subs_ns }:body/#{ @subs_ns }:div/#{ @subs_ns }:p")
+      @all_subs.select {|n|
         # puts "Vedo se #{ n['begin'].to_f } >= #{ from } e se #{ n['end'].to_f } <= #{ to }"
         (n['begin'].to_f >= from) && (n['end'].to_f <= to)
       }
