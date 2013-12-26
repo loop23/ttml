@@ -11,6 +11,9 @@ It's run like
     $ ttml2srt filename
 
 and outputs some .srt formatted subtitles to standard output.
+**Please note that it does a very (my)application dependent stripping of
+html tags from the input, so you may have to check the source to get
+out valid SubRip output.**
 
 ## Installation
 
