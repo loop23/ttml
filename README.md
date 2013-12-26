@@ -2,8 +2,15 @@
 
 Very simple Timed Text Markup Language parsing - I needed to parse a ttml file
 and couldn't find a ruby implementation (probably because you don't really
-need one!), so I wrote one. In the future I may support writing a ttml file
+need one!), so I wrote it. In the future I may support writing a ttml file
 and/or a better, richer API.
+
+Also, I needed to convert ttml to SubRip, so a little binary was born, ttml2srt;
+It's run like
+
+  ttml2srt filename
+
+and outputs some .srt formatted subtitles to standard output.
 
 ## Installation
 

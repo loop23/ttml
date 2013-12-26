@@ -2,6 +2,23 @@ require "ttml/version"
 require "nokogiri"
 
 module Ttml
+
+  # Some stuff that helps but is not directly about getting nodes out of it
+  class Util
+    # takes a string offset (as found in ttml nodes) and returns smpte string;
+    # Used in converting to SubRip.
+    #
+    # Ex: 0.0s => 00:00:00.0
+    # Ex: 63.5s => 00:01:03.500
+    def self.smpte_time offset
+      hours = minutes = seconds = millisecs = 0
+      f_off = offset.to_s.sub(/s$/, '').to_f
+      millisecs = ((f_off - f_off.to_i) * 1000).to_i
+      minutes, seconds = f_off.divmod(60)
+      hours, minutes = minutes.divmod(60)
+      "#{ sprintf('%02d', hours) }:#{ sprintf('%02d', minutes) }:#{ sprintf('%02d', seconds) },#{ millisecs }"
+    end
+  end
   # Minimal Timed Text Markup Language parsing and extraction.
   #
   # Example:
@@ -9,9 +26,9 @@ module Ttml
   #   => [Ttml::Document]
   #   >> doc.copyright
   #   => '(c) 2012 loop23'
-  #   >> doc.subtitles
-  #   => [All subtitles]
-  #   >> doc.subtitles(0.0, 100.0)
+  #   >> doc.subtitle_stream
+  #   => [All subtitles as Nokogiri::Node instances]
+  #   >> doc.subtitle_stream(0.0, 100.0)
   #   => [Subtitles from beginning to 100 seconds]
   class Document
 
