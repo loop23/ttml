@@ -8,7 +8,7 @@ and/or a better, richer API.
 Also, I needed to convert ttml to SubRip, so a little binary was born, ttml2srt;
 It's run like
 
-  ttml2srt filename
+    $ ttml2srt filename
 
 and outputs some .srt formatted subtitles to standard output.
 
