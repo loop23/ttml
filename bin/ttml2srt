@@ -7,17 +7,12 @@ raise "Please pass filename[s] to parse" if ARGV.empty?
 
 def self.conv2srt fname
   doc = Ttml::Document.new(fname) || raise("No doc at #{ fname }")
-  counter = 0
+  counter = 1
   doc.subtitle_stream.each do |sub|
     # Avoid outputing empty lines
     cleaned = sub.content.sub(/.+00">([^<]*)<.+/, '\1')
     next if cleaned.empty?
-    puts <<EOS
-#{ counter }\r
-#{ Ttml::Util.smpte_time(sub['begin']) } --> #{ Ttml::Util.smpte_time(sub['end']) }\r
-#{ cleaned }\r
-\r
-EOS
+    print "#{ counter }\n#{ Ttml::Util.smpte_time(sub['begin']) } --> #{ Ttml::Util.smpte_time(sub['end']) }\n#{ cleaned }\n\n"
     counter += 1
   end
 end
@@ -25,3 +20,4 @@ end
 while fname = ARGV.shift
   conv2srt(fname)
 end
+
