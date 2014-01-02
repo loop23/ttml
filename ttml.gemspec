@@ -16,5 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Ttml::VERSION
 
   gem.add_runtime_dependency "nokogiri"
+  gem.add_runtime_dependency "trollop"
 
 end
